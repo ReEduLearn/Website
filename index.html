@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#"><img src="/images/logo.svg" alt="logo"></a>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img class="icon-hamburger" src="/images/icon-hamburger.svg" alt="" aria-hidden="true">
+          <img class="icon-close" src="/images/icon-close.svg" alt="" aria-hidden="true">
+          <!-- visually hidden class makes the span present in the button but not visible at all -->
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation">
+          <!-- we give id primary-navigation to ul because of aria-control which is set on button and its decide by id  -->
+          <ul role="list" class="nav-list" id="primary-navigation">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </nav>
+        <!-- In inline-flex the  container will get the inline property only. while the items of flexbox still holds the same properties of flex-box -->
+        <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div class="flow">
+            <h1 class="fs-primary-heading fw-bold">Bring everyone together to build better products</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium voluptatum non et nam
+              earum.</p>
+            <button class="button">Get Started</button>
+          </div>
+          <div>
+            <img src="/images/illustration-intro.svg" alt="" style="padding:3em;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div class="flow">
+            <h2 class="fs-secondary-heading fw-bold">What's different about Manage?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus soluta nam doloremque
+              dignissimos?</p>
+          </div>
+          <div>
+            <ul class="numbered-items | flow" role="list">
+              <li>
+                <div class="flow" style="--flow-spacer:1em;">
+                  <h3 class="fs-600 fw-bold">BUild everything from scratch</h3>
+                  <p data-width="wide">Lorem ipsum dolor sit amet, consectetur adipisici ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Eum ab quidem minima? Ullam, doloremque
+                    architecto.</p>
+                </div>
+              </li>
+              <li>
+                <div class="flow" style="--flow-spacer:1em;">
+                  <h3 class="fs-600 fw-bold">BUild everything from scratch</h3>
+                  <p data-width="wide">Lorem ipsum dolor sit amet, consectetur adipisici ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Eum ab quidem minima? Ullam, doloremque
+                    architecto.</p>
+                </div>
+              </li>
+              <li>
+                <div class="flow" style="--flow-spacer:1em;">
+                  <h3 class="fs-600 fw-bold">BUild everything from scratch</h3>
+                  <p data-width="wide">Lorem ipsum dolor sit amet, consectetur adipisici ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Eum ab quidem minima? Ullam, doloremque
+                    architecto.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel | padding-block-700">
+      <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
+      <!-- carousel here  -->
+      <button class="button">Get Started</button>
+    </section>
+
+    <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <p class="fs-secondary-heading fw-bold">Simply how your team works today</p>
+          </div>
+          <div><button class="button" data-type="inverted">Get Started</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="bg-neutral-900 text-neutral-100">
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <a href="#"><img src="/images/logo.svg" alt=""></a>
+          <ul role="list" aria-alabel="social links">
+            <li><a aria-label="facebook" href="#"></a></li>
+            <li><a aria-label="youtube" href="#"></a></li>
+            <li><a aria-label="twitter" href="#"></a></li>
+            <li><a aria-label="pinterest" href="#"></a></li>
+            <li><a aria-label="instagram" href="#"></a></li>
+          </ul>
+        </div>
+        <div>
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer:1em;" role="list" aria-label="Footer">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <form action="">
+            <input type="email">
+            <button class="button">GO</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
